@@ -94,7 +94,7 @@ const FirstDashboard = () => {
               style={{ fontSize: "3rem", width: "100%", padding: "1rem" }}
             /> */}
             <Calendar
-              className="flex-grow-0 md:flex-grow"
+              className="flex-grow-0 md:flex-grow mb-20 md:0"
               onChange={(date) => setStartDate(date)}
               value={startDate}
             />
