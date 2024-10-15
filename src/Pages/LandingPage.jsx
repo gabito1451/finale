@@ -52,11 +52,11 @@ const LandingPage = () => {
               <br /> business thrive. Join a commuinity of professionals, gain
               more exposure and <br /> drive your business forward.
             </p>
-            <div className="flex rounded-lg max-w-[450px]  mt-5 hover:rounded-lg hover:scale-105 hover:shadow-lg transition-all duration-300 ease-in-out ">
+            <div className="flex rounded-lg max-w-[450px]  mt-5 ">
               <input
                 type="text"
                 placeholder="I need help with ........."
-                className="w-full bg-[url('../assets/search_icon.svg')] bg-[length:20px_20px] bg-[position:10px_center] bg-no-repeat bg-[#edebea] outline-none py-[18px] px-10  h-10   border-none"
+                className="w-full bg-[url('/public/search_icon.svg')] bg-[length:20px_20px] bg-[position:10px_center] bg-no-repeat bg-[#edebea] outline-none py-[18px] px-10  h-9   border-none"
               />
               <Link to="/SignUp">
                 <CenteredButton className="whitespace-nowrap px-6  text-[16px] font-bold">

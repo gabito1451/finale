@@ -15,6 +15,7 @@ import Profile from "./Pages/Profile";
 import Settings from "./Pages/Settings";
 import Appointments from "./Pages/Appointments";
 import FirstDashboard from "./Pages/FirstDashboard";
+import { NameProvider } from "./Context/NameContext";
 
 const router = createBrowserRouter([
   {
@@ -87,7 +88,11 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
-  return <RouterProvider router={router} />;
+  return (
+    <NameProvider>
+      <RouterProvider router={router} />
+    </NameProvider>
+  );
 }
 
 export default App;

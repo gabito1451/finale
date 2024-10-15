@@ -1,7 +1,6 @@
 import React from "react";
 import Card from "../Components/Card";
 import ProgressChart from "../Components/ProgressChart";
-import DatePicker from "react-datepicker";
 import Calendar from "react-calendar";
 import "react-calendar/dist/Calendar.css";
 import "react-datepicker/dist/react-datepicker.css";
@@ -11,13 +10,16 @@ import ord from "../assets/ord.svg";
 import income from "../assets/income.svg";
 import pending from "../assets/pending.svg";
 import complete from "../assets/complete.svg";
+import { useContext } from "react";
+import { NameContxt } from "../Context/NameContext";
 
 const Dashboard = () => {
   const [startDate, setStartDate] = useState(new Date());
+  const name = useContext(NameContxt);
   return (
     <div className="px-8 h-[100vh] w-full overflow-y-auto">
       <h1 className="text-[16px] py-4">
-        Hello <span className="font-semibold text-[18px]">Gabriel</span>
+        Hello <span className="font-semibold text-[18px]">{name}</span>
       </h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 pb-2">
         <Card

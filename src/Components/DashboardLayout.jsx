@@ -171,7 +171,7 @@ const DashboardLayout = ({}) => {
                 okText="Yes"
                 cancelText="No"
                 onConfirm={() => {
-                  localStorage.removeItem("gabDB");
+                  sessionStorage.removeItem("currentUser");
 
                   // Use navigate to redirect to the home page
 
