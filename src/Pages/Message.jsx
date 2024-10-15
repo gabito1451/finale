@@ -115,7 +115,7 @@ const Message = () => {
       </div>
 
       {/* Chat Window */}
-      <div className="col-span-3 flex-1 flex flex-col h-[1000px] md:h-[600px] overflow-y-auto  rounded bg-white mx-12">
+      <div className="col-span-3 flex-1 flex flex-col h-[1000px] md:h-[600px] overflow-y-auto  rounded bg-white mx-2 md:mx-12">
         {/* Chat Header */}
         <div className=" flex justify-between  items-center p-4 border-b border-gray-200">
           <h2 className="font-bold text-[12px]">
@@ -188,9 +188,9 @@ const Message = () => {
               value={newMessage}
               onChange={(e) => setNewMessage(e.target.value)}
               placeholder="Write your message..."
-              className="max-w-[380px] md:flex-1 p-2 text-[18px]"
+              className="w-[200px] md:flex-1 p-2 text-[18px]"
             />
-            <div className="opacity-40">
+            <div className="hidden md:flex md:opacity-40">
               <svg
                 width="17"
                 height="18"
@@ -210,7 +210,7 @@ const Message = () => {
 
             <button
               onClick={handleSendMessage}
-              className="ml-2 bg-[#1a73e8] hover:bg-gradient-to-l text-white font-semibold py-1 rounded px-2"
+              className="ml-2 bg-[#1a73e8] hover:bg-gradient-to-l text-white font-semibold py-1 px-1 rounded "
             >
               <img src={send} alt="send" />
             </button>

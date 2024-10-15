@@ -114,7 +114,7 @@ const LandingPage = () => {
                 <img
                   src={one}
                   alt=""
-                  className="hover:scale-105 hover:shadow-lg transition-all duration-300 ease-in-out  mask-radial-blur"
+                  className="hover:scale-105 hover:shadow-lg transition-all duration-300 ease-in-out  maskIm-radial-blur"
                 />
                 <div>
                   <h1 className="text-[24px] font-semibold whitespace-nowrap">
