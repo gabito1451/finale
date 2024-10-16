@@ -46,6 +46,7 @@ const PersonalInformation = () => {
   });
 
   const onSubmit = (data) => {
+    e.preventDefault();
     console.log("Form data:", data);
   };
 
