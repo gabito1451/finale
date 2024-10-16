@@ -4,18 +4,26 @@ import ProgressChart from "../Components/ProgressChart";
 import Calendar from "react-calendar";
 import "react-calendar/dist/Calendar.css";
 import "react-datepicker/dist/react-datepicker.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Orders from "../Components/Orders";
 import ord from "../assets/ord.svg";
 import income from "../assets/income.svg";
 import pending from "../assets/pending.svg";
 import complete from "../assets/complete.svg";
-import { useContext } from "react";
-import { NameContxt } from "../Context/NameContext";
 
 const Dashboard = () => {
   const [startDate, setStartDate] = useState(new Date());
-  const name = useContext(NameContxt);
+  const [name, setName] = useState("Guest");
+
+  useEffect(() => {
+    const storedDb = sessionStorage.getItem("currentUser");
+    if (storedDb) {
+      const db = JSON.parse(storedDb);
+      console.log(db);
+      console.log(db.email);
+      setName(db.email || "Guest");
+    }
+  }, []);
   return (
     <div className="px-8 h-[100vh] w-full overflow-y-auto">
       <h1 className="text-[16px] py-4">
