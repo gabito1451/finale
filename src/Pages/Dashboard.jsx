@@ -49,7 +49,7 @@ const Dashboard = () => {
           url={pending}
         />
         <Card
-          number={"0"}
+          number={"70"}
           title={"Complete Order"}
           className="bg-[#E8F5E9] hover:rounded-lg hover:scale-105 hover:shadow-lg transition-all duration-300 ease-in-out "
           url={complete}
