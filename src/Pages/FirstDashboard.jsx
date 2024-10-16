@@ -18,7 +18,7 @@ const FirstDashboard = () => {
 
   const [startDate, setStartDate] = useState(new Date());
   return (
-    <div className="px-8 h-[100vh] w-full overflow-y-auto">
+    <div className="flow px-8 h-[100vh] w-full overflow-y-auto">
       <h1 className="text-[16px] py-4">
         Hello <span className="font-semibold text-[18px]">{name}</span>
       </h1>
@@ -85,7 +85,7 @@ const FirstDashboard = () => {
             Appointments
           </h1>
           {/* date picker */}
-          <div className="w-[300px] sm:w-full flex items-center justify-center  pt-4 pb-4 md:pb-4">
+          <div className="w-[220px] sm:w-full flex items-center justify-center  pt-4 pb-4 md:pb-4">
             {/* <DatePicker
               closeOnScroll={true}
               selected={startDate}
@@ -94,7 +94,7 @@ const FirstDashboard = () => {
               style={{ fontSize: "3rem", width: "100%", padding: "1rem" }}
             /> */}
             <Calendar
-              className="flex-grow-0 md:flex-grow mb-20 md:0"
+              className="w-full mb-20 md:0"
               onChange={(date) => setStartDate(date)}
               value={startDate}
             />

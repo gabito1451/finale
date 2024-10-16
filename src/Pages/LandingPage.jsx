@@ -110,7 +110,10 @@ const LandingPage = () => {
           {/* second section in the 3rd div */}
           <div className="flex flex-col w-full m-auto md:m-0 md:flex-row gap-7  ">
             <div className="mt-[70px] px-[10px] md:px[0px]">
-              <div className="flex  justify-center items-center gap-10 md:gap-10 mb-6 md:mb-0">
+              <div
+                data-aos="fade-down-right"
+                className="flex  justify-center items-center gap-10 md:gap-10 mb-6 md:mb-0"
+              >
                 <img
                   src={one}
                   alt=""
@@ -183,7 +186,10 @@ const LandingPage = () => {
                 alt=""
                 className=" hidden md:flex my-[20px] md:my-[50px]  "
               />
-              <div className=" flex  justify-center items-center gap-10 md:gap-10">
+              <div
+                data-aos="fade-up-left"
+                className=" flex  justify-center items-center gap-10 md:gap-10"
+              >
                 <img
                   src={four}
                   alt=""
@@ -221,6 +227,7 @@ const LandingPage = () => {
         <div className="w-full  flex flex-col m-auto md:flex-row lg:px-[200px] mt-14 px=[40px]">
           <img
             src={girlImg}
+            data-aos="fade-down-right"
             alt=""
             className="h-[300px] md:h-[500px] flex-1 "
           />

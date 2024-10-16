@@ -84,7 +84,7 @@ const Dashboard = () => {
             Appointments
           </h1>
           {/* date picker */}
-          <div className="w-[300px] sm:w-full flex items-center justify-center  pt-4 pb-4 md:pb-4">
+          <div className="w-[220px] sm:w-full flex items-center justify-center  pt-4 pb-4 md:pb-4">
             {/* <DatePicker
               closeOnScroll={true}
               selected={startDate}
@@ -93,7 +93,7 @@ const Dashboard = () => {
               style={{ fontSize: "3rem", width: "100%", padding: "1rem" }}
             /> */}
             <Calendar
-              className="flex-grow-0 md:flex-grow"
+              className="w-full mb-20 md:0"
               onChange={(date) => setStartDate(date)}
               value={startDate}
             />

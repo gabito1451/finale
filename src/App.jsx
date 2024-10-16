@@ -16,7 +16,12 @@ import Settings from "./Pages/Settings";
 import Appointments from "./Pages/Appointments";
 import FirstDashboard from "./Pages/FirstDashboard";
 import { NameProvider } from "./Context/NameContext";
-
+import AOS from "aos";
+import "aos/dist/aos.css"; // You can also use <link> for styles
+// ..
+AOS.init({
+  duration: 600,
+});
 const router = createBrowserRouter([
   {
     path: "/",

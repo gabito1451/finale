@@ -12,7 +12,12 @@ const ServicesGrid = () => {
 
   return (
     <div className="bg-gray-100 py-10 px-10">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 ">
+      <div
+        data-aos="fade-up"
+        data-aos-easing="linear"
+        data-aos-duration="1500"
+        className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 "
+      >
         {services.map((service, index) => (
           <ServiceCard key={index} icon={service.icon} title={service.title} />
         ))}
