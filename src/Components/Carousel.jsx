@@ -54,10 +54,10 @@ const Carousel = ({ children }) => {
                 aria-hidden="true"
               />
               <div className="absolute inset-0 flex flex-col items-center justify-center text-white text-center px-8">
-                <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                <h2 className="text-3xl md:text-4xl font-Inter font-bold mb-4">
                   {slide.text}
                 </h2>
-                <p className="text-lg">
+                <p className="text-lg font-bold font-sans">
                   Find Reliable Experts For All Your Home Service Needs, From
                   Repairs To Cleaning. Our Verified Professionals Are Ready To
                   Help You.

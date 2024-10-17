@@ -58,10 +58,10 @@ const ProfileDetailForm = () => {
       <div className="flex min-h-full flex-1 flex-col justify-center px-6 pb-12 lg:px-8">
         <div className="sm:mx-auto sm:w-full sm:max-w-sm">
           <Breadcrumbs />
-          <h2 className="mt-5 text-center text-[32px] text-[#1565c0] font-bold leading-9 tracking-tight">
+          <h2 className="mt-5 font-Inter text-center text-[32px] text-[#1565c0] font-bold leading-9 tracking-tight">
             Profile Details
           </h2>
-          <h2 className="mt-5 text-center font-normal text-[12px] leading-2 tracking-tight text-[#000000]">
+          <h2 className="mt-5 text-center font-Inter font-normal text-[12px] leading-2 tracking-tight text-[#000000]">
             Sign up quickly and easily, Provide your email, Create a secure
             password and Complete your profile to get started.
           </h2>
@@ -73,7 +73,7 @@ const ProfileDetailForm = () => {
             <div>
               <label
                 htmlFor="fullname"
-                className="block text-sm font-medium leading-6 text-gray-900"
+                className="block text-sm font-semibold font-Inter leading-6 text-gray-900"
               >
                 Fullname
               </label>
@@ -100,7 +100,7 @@ const ProfileDetailForm = () => {
             <div>
               <label
                 htmlFor="phoneNumber"
-                className="block text-sm font-medium leading-6 text-gray-900"
+                className="block text-sm font-semibold font-Inter leading-6 text-gray-900"
               >
                 Phone Number
               </label>
@@ -127,7 +127,7 @@ const ProfileDetailForm = () => {
             <div>
               <label
                 htmlFor="country"
-                className="block text-sm font-medium leading-6 text-gray-900"
+                className="block text-sm font-semibold font-Inter leading-6 text-gray-900"
               >
                 Country
               </label>
@@ -156,22 +156,12 @@ const ProfileDetailForm = () => {
             <div>
               <button
                 type="submit"
-                className="mt-10 flex w-full justify-center rounded-md bg-[#1a73e8] px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm   hover:scale-105 hover:shadow-lg transition-all duration-300 ease-in-out"
+                className="mt-10 flex w-full font-Roboto justify-center rounded-md bg-[#1a73e8] px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm   hover:scale-105 hover:shadow-lg transition-all duration-300 ease-in-out"
               >
                 Continue
               </button>
             </div>
           </form>
-
-          <p className="mt-5 text-center text-sm text-gray-500">
-            Already have an account?
-            <Link
-              to="/SignIn"
-              className="font-semibold leading-6 text-[#1a73e8] hover:text-indigo-500"
-            >
-              Sign in
-            </Link>
-          </p>
         </div>
       </div>
     </>

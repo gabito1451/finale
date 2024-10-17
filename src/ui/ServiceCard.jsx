@@ -7,7 +7,7 @@ const ServiceCard = ({ icon, title }) => {
               ${className}`} "
     >
       <div className="bg-blue-100 p-4 rounded-full mb-4">{icon}</div>
-      <h3 className="text-[#1a73e8] text-lg font-bold">{title}</h3>
+      <h3 className="text-[#1a73e8] font-Roboto text-lg font-bold">{title}</h3>
     </div>
   );
 };

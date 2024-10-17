@@ -19,7 +19,7 @@ const ImageCarousel = () => {
   }, [images.length]);
 
   return (
-    <div className="relative w-full h-[300px] md:h-[500px] overflow-hidden">
+    <div className="relative w-full h-[300px] md:h-[413px] overflow-hidden">
       {/* Image display */}
       {images.map((image, index) => (
         <motion.div

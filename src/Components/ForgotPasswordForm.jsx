@@ -63,10 +63,10 @@ const ForgotPasswordForm = () => {
     <>
       <div className="flex min-h-full flex-1 flex-col justify-center px-6 pb-12 lg:px-8">
         <div className="sm:mx-auto sm:w-full sm:max-w-sm">
-          <h2 className="mt-5 text-center text-[32px] text-[#1565c0] font-bold leading-9 tracking-tight">
+          <h2 className="mt-10 text-center font-Inter text-[32px] text-[#1565c0] font-bold leading-9 tracking-tight">
             Forgot Password
           </h2>
-          <h2 className="mt-5 text-center font-normal text-[12px] leading-2 tracking-tight text-[#000000]">
+          <h2 className="mt-5 text-center font-Inter font-normal text-[12px] leading-2 tracking-tight text-[#000000]">
             An OTP will be sent to the provided email address to initiate
             password change
           </h2>
@@ -77,7 +77,7 @@ const ForgotPasswordForm = () => {
             <div>
               <label
                 htmlFor="email"
-                className="block text-sm font-medium leading-6 text-gray-900"
+                className="block text-sm font-Inter font-semibold leading-6 text-gray-900"
               >
                 Email address
               </label>

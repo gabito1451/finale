@@ -9,12 +9,18 @@ const ProfileCard = ({ image, name, description }) => {
       {/* Flex row to display image and name side by side */}
       <div className="flex items-center mb-4">
         <div className="rounded-full overflow-hidden h-16 w-16 mr-4">
-          <img src={image} alt={name} className="h-full w-full object-cover" />
+          <img
+            src={image}
+            alt={name}
+            className="h-[60px] w-[60px] object-cover"
+          />
         </div>
-        <h3 className="text-[#121212] text--[16px] font-semibold">{name}</h3>
+        <h3 className="text-[#121212] font-[Roboto] text--[16px] font-semibold">
+          {name}
+        </h3>
       </div>
 
-      <p className="text-[#121212] text-[16px] text-center mt-2">
+      <p className="text-[#121212] font-[Roboto] text-[16px] text-center mt-2">
         {description}
       </p>
     </div>

@@ -34,12 +34,12 @@ const Footer = () => {
         </div>
 
         {/* Quick Links Section */}
-        <div className="space-y-4 text-left">
+        <div className="space-y-4 text-left font-Roboto">
           <p className="font-semibold text-[16px]">Quick Links</p>
           <ul className="space-y-2">
             <li>
               <a href="#" className="hover:underline text-[14px]">
-                How It Works
+                How It works
               </a>
             </li>
             <li>

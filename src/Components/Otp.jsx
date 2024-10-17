@@ -28,10 +28,10 @@ export default function Otp() {
   return (
     <div className="m-auto flex px-10 flex-col justify-center ">
       <Breadcrumbs />
-      <h2 className="mt-5 text-center text-[25px] md:text-[32px] text-[#1565c0] font-bold leading-9 tracking-tight">
+      <h2 className="mt-5 text-center text-[25px] font-Inter md:text-[32px] text-[#1565c0] font-bold leading-9 tracking-tight">
         Email Verification
       </h2>
-      <h2 className="mt-5 text-center font-normal text-[12px] leading-2 tracking-tight text-[#000000]">
+      <h2 className="mt-5 text-center font-normal font-Inter text-[12px] leading-2 tracking-tight text-[#000000]">
         An OTP has been sent to your email, Please enter OTP sent to{" "}
         {user.email}
       </h2>
@@ -84,7 +84,7 @@ export default function Otp() {
               });
             }
           }}
-          className=" mt-10  flex w-full justify-center rounded-md bg-[#1a73e8] md:px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-smhover:rounded-lg hover:scale-105 hover:shadow-lg transition-all duration-300 ease-in-out "
+          className=" mt-10  flex w-full font-Roboto justify-center rounded-md bg-[#1a73e8] md:px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-smhover:rounded-lg hover:scale-105 hover:shadow-lg transition-all duration-300 ease-in-out "
         >
           Sign in
         </button>

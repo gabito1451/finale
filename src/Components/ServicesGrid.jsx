@@ -11,7 +11,7 @@ const ServicesGrid = () => {
   ];
 
   return (
-    <div className="bg-gray-100 py-10 px-10">
+    <div className="bg-gray-100 font-Roboto py-10 px-10">
       <div
         data-aos="fade-up"
         data-aos-easing="linear"

@@ -59,7 +59,7 @@ const ResetPasswordForm = () => {
     <>
       <div className="flex min-h-full flex-1 flex-col justify-center px-6 pb-12 lg:px-8 ">
         <div className="sm:mx-auto sm:w-full sm:max-w-sm">
-          <h2 className="mt-5 text-center text-[25px] md:text-[32px] text-[#1565c0] font-bold leading-9 tracking-tight">
+          <h2 className="mt-10 text-center font-Inter text-[25px] md:text-[32px] text-[#1565c0] font-bold leading-9 tracking-tight">
             Reset Password
           </h2>
         </div>
@@ -69,7 +69,7 @@ const ResetPasswordForm = () => {
             <div>
               <label
                 htmlFor="password"
-                className="block text-sm font-medium leading-6 text-gray-900"
+                className="block text-sm font-bold font-Inter leading-6 text-gray-900"
               >
                 Password
               </label>
@@ -95,7 +95,7 @@ const ResetPasswordForm = () => {
             <div>
               <label
                 htmlFor="confirmPassword"
-                className="block text-sm font-medium leading-6 text-gray-900"
+                className="block text-sm font-bold font-Inter leading-6 text-gray-900"
               >
                 Confirm Password
               </label>
@@ -121,22 +121,12 @@ const ResetPasswordForm = () => {
             <div>
               <button
                 type="submit"
-                className="mt-10 flex w-full justify-center rounded-md bg-[#1a73e8] px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:rounded-lg hover:scale-105 hover:shadow-lg transition-all duration-300 ease-in-out "
+                className="mt-10 flex w-full font-Roboto justify-center rounded-md bg-[#1a73e8] px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:rounded-lg hover:scale-105 hover:shadow-lg transition-all duration-300 ease-in-out "
               >
                 ResetPassword
               </button>
             </div>
           </form>
-
-          <p className="mt-10 text-center text-sm text-gray-500">
-            Already have an account?
-            <Link
-              to="/SignIn"
-              className="font-semibold leading-6 text-[#1a73e8] hover:text-indigo-500"
-            >
-              Sign in
-            </Link>
-          </p>
         </div>
       </div>
     </>

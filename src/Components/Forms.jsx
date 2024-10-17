@@ -67,22 +67,25 @@ const Forms = () => {
     <>
       <div className="flex min-h-full flex-1 flex-col justify-center px-6 pb-12 lg:px-8 ">
         <div className="sm:mx-auto sm:w-full sm:max-w-sm">
-          <Breadcrumbs />
-          <h2 className="mt-5 text-center text-[25px] md:text-[32px] text-[#1565c0] font-bold leading-9 tracking-tight">
+          <Breadcrumbs className="" />
+          <h2 className="mt-5 text-center font-Inter text-[25px] md:text-[32px] text-[#1565c0] font-bold leading-9 tracking-tight">
             Create your Account
           </h2>
-          <h2 className="mt-5 text-center font-normal text-[12px] leading-2 tracking-tight text-[#000000]">
+          <h2 className="mt-5 text-center font-Inter font-normal text-[12px] leading-2 tracking-tight text-[#000000]">
             Sign up quickly and easily, Provide your email, Create a secure
             <br /> password and Complete your profile to get started.
           </h2>
         </div>
 
         <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
-          <form onSubmit={handleSubmit(onSubmit)} className="space-y-2">
+          <form
+            onSubmit={handleSubmit(onSubmit)}
+            className="space-y-2 font-Inter"
+          >
             <div>
               <label
                 htmlFor="email"
-                className="block text-sm font-medium leading-6 text-gray-900"
+                className="block text-sm font-semibold  leading-6 text-gray-900"
               >
                 Email address
               </label>
@@ -108,7 +111,7 @@ const Forms = () => {
             <div>
               <label
                 htmlFor="password"
-                className="block text-sm font-medium leading-6 text-gray-900"
+                className="block text-sm font-semibold leading-6 text-gray-900"
               >
                 Password
               </label>
@@ -134,7 +137,7 @@ const Forms = () => {
             <div>
               <label
                 htmlFor="confirmPassword"
-                className="block text-sm font-medium leading-6 text-gray-900"
+                className="block text-sm font-semibold leading-6 text-gray-900"
               >
                 Confirm Password
               </label>
@@ -160,14 +163,14 @@ const Forms = () => {
             <div>
               <button
                 type="submit"
-                className="mt-10 flex w-full justify-center rounded-md bg-[#1a73e8] px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:rounded-lg hover:scale-105 hover:shadow-lg transition-all duration-300 ease-in-out "
+                className="mt-10 flex w-full font-[Roboto] justify-center rounded-md bg-[#1a73e8] px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:rounded-lg hover:scale-105 hover:shadow-lg transition-all duration-300 ease-in-out "
               >
                 Continue
               </button>
             </div>
           </form>
 
-          <p className="mt-10 text-center text-sm text-gray-500">
+          <p className="mt-20 text-center text-sm text-gray-500">
             Already have an account?
             <Link
               to="/SignIn"

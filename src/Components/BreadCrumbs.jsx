@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 
-const Breadcrumb = () => {
+const Breadcrumb = ({ className }) => {
   const location = useLocation(); // Get current URL path
   const navigate = useNavigate();
 
@@ -31,12 +31,14 @@ const Breadcrumb = () => {
   };
 
   return (
-    <div className="flex items-center justify-center mt-3 space-x-2">
+    <div
+      className={`flex items-center justify-center py-10 mt-3 font-Roboto space-x-2 ${className}`}
+    >
       {/* Sign Up Step */}
       <Link
         to="/SignUp"
         className={`cursor-pointer text-nowrap text-[10px] md:text-[16px] ${
-          activeStep === 1 ? "text-blue-500" : "text-gray-500"
+          activeStep === 1 ? "text-[#1a73e8]" : "text-gray-500"
         }`}
         onClick={() => handleStepClick(1)}
       >
@@ -48,7 +50,7 @@ const Breadcrumb = () => {
       <Link
         to="/Profile"
         className={`cursor-pointer text-nowrap text-[10px] md:text-[16px] ${
-          activeStep === 2 ? "text-blue-500" : "text-gray-500"
+          activeStep === 2 ? "text-[#1a73e8]" : "text-gray-500"
         }`}
         onClick={() => handleStepClick(2)}
       >
@@ -60,7 +62,7 @@ const Breadcrumb = () => {
       <Link
         to="/OTP"
         className={`cursor-pointer text-nowrap text-[10px]  md:text-[16px] ${
-          activeStep === 3 ? "text-blue-500" : "text-gray-500"
+          activeStep === 3 ? "text-[#1a73e8]" : "text-gray-500"
         }`}
         onClick={() => handleStepClick(3)}
       >

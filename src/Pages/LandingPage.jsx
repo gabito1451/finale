@@ -28,10 +28,10 @@ const LandingPage = () => {
       <div className="container">
         <div className="first-div flex px-[40px] py-[40px] md:gap-2 lg:gap-28 bg-[#f5f5f5]">
           <div className=" flex-1">
-            <HeaderButton className="font-bold">
+            <HeaderButton className="font-bold font-sans text-[18px]">
               ON DEMAND SERVICE PLATFORM
             </HeaderButton>
-            <h1 className="mt-[10px] text-[25px] leading-[38px] md:leading-[60px] md:text-[48px] text-[#000000] font-bold">
+            <h1 className="my-[30px] text-[25px] leading-[38px] md:leading-[60px] md:text-[48px] text-[#000000] font-bold">
               {displayText ? (
                 displayText
               ) : (
@@ -47,7 +47,7 @@ const LandingPage = () => {
                 />
               )}
             </h1>
-            <p className="text-[13px] md:text-[16px] font-normal text-[-#000000]">
+            <p className="text-[13px] md:text-[16px] font-normal font-sans text-[-#000000]">
               Connect with more clients, streamline your services and watch your{" "}
               <br /> business thrive. Join a commuinity of professionals, gain
               more exposure and <br /> drive your business forward.
@@ -59,27 +59,27 @@ const LandingPage = () => {
                 className="w-full bg-[url('/public/search_icon.svg')] bg-[length:20px_20px] bg-[position:10px_center] bg-no-repeat bg-[#edebea] outline-none py-[18px] px-10  h-9   border-none"
               />
               <Link to="/SignUp">
-                <CenteredButton className="whitespace-nowrap px-6  text-[16px] font-bold">
+                <CenteredButton className="whitespace-nowrap px-[25px] py-2  text-[16px] font-bold">
                   Get Started
                 </CenteredButton>
               </Link>
             </div>
           </div>
-          <div className=" first-div-image  bg-[url('./Assets/Rectangle 34(1).svg')] bg-no-repeat  justify-end md:flex-1">
+          <div className=" first-div-image  bg-[url('./Assets/Rectangle 34(1).svg')] bg-no-repeat  justify-end md:flex-1 ">
             <ImageCarousel />
           </div>
         </div>
         {/* over 1.1 milloin reviews */}
-        <div className=" flex flex-col gap-3 md:flex-row md:justify-between md:items-center px-[40px] py-[20px] bg-[#0d47a1]">
-          <div>
-            <p className="font-bold text-[24px] text-white">
+        <div className=" flex flex-col gap-3 md:flex-row md:justify-between md:items-center md:px-[40px] lg:px-0 py-[20px] bg-[#0d47a1]">
+          <div className="md:px-10">
+            <p className="font-bold text-[24px] font-Merriweather text-white">
               Over 1.1 Million Reviews
             </p>
             <p className="text-[16px] text-white font-normal">
               In Cleaning, Home Repairs and Planning{" "}
             </p>
           </div>
-          <div className="flex">
+          <div className="flex md:pr-10 lg:pr-10">
             <img src={appleStoreIcon} alt="" />
             <img src={playStoreIcon} alt="" />
           </div>
@@ -87,11 +87,11 @@ const LandingPage = () => {
         {/* 3rd div */}
         <div className="px-[40px] flex flex-col gap-20  lg:flex-row mt-[70px]">
           <div className="">
-            <HeaderButton>WHY JOIN US</HeaderButton>
-            <h2 className="mt-[10px] text-[30px] leading-[48px] text-[#000000] font-bold md:whitespace-nowrap ">
+            <HeaderButton className="font-sans">WHY JOIN US</HeaderButton>
+            <h2 className="mt-[10px] text-[30px] leading-[48px] text-[#000000] font-Merriweather font-bold md:whitespace-nowrap ">
               UNLOCK YOUR PROFESSIONAL <br /> POTENTIAL
             </h2>
-            <p className="mt-[10px] text-[16px] font-normal text-[-#000000]">
+            <p className="mt-[10px] text-[16px] font-normal font-sans text-[#000000]">
               Connect with more clients, enjoy a flexible schedule, secure{" "}
               <br />
               reliable payments, and grow your business with our dedicated{" "}
@@ -99,10 +99,10 @@ const LandingPage = () => {
               support and resources.
             </p>
             <div className=" flex gap-5 mt-[40px]">
-              <CenteredButton className="whitespace-nowrap px-1 md:px-6 text-[10px] md:text-[16px] font-bold">
+              <CenteredButton className=" font-Roboto whitespace-nowrap px-1 md:px-6 text-[10px] md:text-[16px] font-bold">
                 Sign up Now
               </CenteredButton>
-              <CenteredButton className="whitespace-nowrap px-1 md:px-6 text-[10px] md:text-[16px] font-bold">
+              <CenteredButton className="font-Roboto whitespace-nowrap px-1 md:px-6 text-[10px] md:text-[16px] font-bold">
                 Learn more
               </CenteredButton>
             </div>
@@ -110,20 +110,17 @@ const LandingPage = () => {
           {/* second section in the 3rd div */}
           <div className="flex flex-col w-full m-auto md:m-0 md:flex-row gap-7  ">
             <div className="md:mt-[70px] px-[10px] md:px[0px]">
-              <div
-                data-aos="fade-down-right"
-                className="flex  justify-center items-center gap-10 md:gap-10 mb-6 md:mb-0"
-              >
+              <div className="flex  justify-center items-center gap-10 md:gap-10 mb-6 md:mb-0">
                 <img
                   src={one}
                   alt=""
-                  className="hover:scale-105 hover:shadow-lg transition-all duration-300 ease-in-out  maskIm-radial-blur"
+                  className="h-[40px] w-[40px] hover:scale-105 hover:shadow-lg transition-all duration-300 ease-in-out  maskIm-radial-blur"
                 />
                 <div>
-                  <h1 className="text-[24px] font-semibold whitespace-nowrap">
+                  <h1 className="text-[24px] font-Merriweather font-semibold whitespace-nowrap">
                     Expand Your Reach
                   </h1>
-                  <p className="text-[16px] text-left md:text-right">
+                  <p className="text-[16px] font-Roboto text-left md:text-right">
                     Access a{" "}
                     <span className="text-[#1a73ea]">
                       large and growing <br />
@@ -142,13 +139,13 @@ const LandingPage = () => {
                 <img
                   src={two}
                   alt=""
-                  className="hover:scale-105 hover:shadow-lg transition-all duration-300 ease-in-out  mask-radial-blur"
+                  className=" h-[40px] w-[40px] hover:scale-105 hover:shadow-lg transition-all duration-300 ease-in-out  mask-radial-blur"
                 />
                 <div>
-                  <h1 className="text-[24px] font-semibold whitespace-nowrap">
+                  <h1 className="text-[24px] font-Merriweather  font-semibold whitespace-nowrap">
                     Secure Payments
                   </h1>
-                  <p className="text-[16px] text-left">
+                  <p className="text-[16px]  font-Roboto text-left">
                     Our
                     <span className="text-[#1a73ea]">
                       secure payment <br />
@@ -166,13 +163,13 @@ const LandingPage = () => {
                 <img
                   src={three}
                   alt=""
-                  className="hover:scale-105 hover:shadow-lg transition-all duration-300 ease-in-out  mask-radial-blur"
+                  className=" h-[40px] w-[40px] hover:scale-105 hover:shadow-lg transition-all duration-300 ease-in-out  mask-radial-blur"
                 />
                 <div>
-                  <h1 className="text-[24px] font-semibold whitespace-nowrap">
+                  <h1 className="text-[24px] font-Merriweather  font-semibold whitespace-nowrap">
                     Flexible Schedule
                   </h1>
-                  <p className="text-[16px] text-left">
+                  <p className="text-[16px]  font-Roboto text-left">
                     <span className="text-[#1a73ea]">
                       Choose when and where
                     </span>{" "}
@@ -186,20 +183,17 @@ const LandingPage = () => {
                 alt=""
                 className=" hidden md:flex my-[20px] md:my-[50px]  "
               />
-              <div
-                data-aos="fade-up-left"
-                className=" flex  justify-center items-center gap-10 md:gap-10"
-              >
+              <div className=" flex  justify-center items-center gap-10 md:gap-10">
                 <img
                   src={four}
                   alt=""
-                  className="hover:scale-105 hover:shadow-md transition-all duration-300 ease-in-out  mask-radial-blur"
+                  className="h-[40px] w-[40px] hover:scale-105 hover:shadow-md transition-all duration-300 ease-in-out  mask-radial-blur"
                 />
                 <div>
-                  <h1 className="text-[24px] font-semibold whitespace-nowrap">
+                  <h1 className="text-[24px] font-Merriweather  font-semibold whitespace-nowrap">
                     Dedicated Support
                   </h1>
-                  <p className="text-[16px] text-left">
+                  <p className="text-[16px] font-Roboto text-left">
                     Our
                     <span className="text-[#1a73ea]">support team</span> is{" "}
                     <br />
@@ -215,7 +209,7 @@ const LandingPage = () => {
           <img src={imgIcon} alt="" className="mt-5 mx-auto" />
         </section>
         <section id="popular-services">
-          <HeaderButton className="mt-[70px] mx-10 text-[18px] font-normal">
+          <HeaderButton className="mt-[70px] mx-10 text-[18px] font-Roboto font-normal">
             POPULAR SERVICES
           </HeaderButton>
           <ServicesGrid />
@@ -232,16 +226,16 @@ const LandingPage = () => {
             className="h-[300px] md:h-[500px] flex-1 "
           />
           <div className="flex-col flex-1">
-            <HeaderButton className="mb-[20px] ml-3 md:ml-0">
+            <HeaderButton className="mb-[20px] ml-3 md:ml-0 font-sans">
               Frequently asked questions
             </HeaderButton>
-            <Accordion className="flex-1" />
+            <Accordion className="flex-1 font-sans" />
           </div>
         </div>
         <div className="bg-[#e3f2fd] mt-4">
-          <p className="font-semibold text-[16px] text-[#1a73ea] py-5 px-10">
+          <p className="font-semibold font-Roboto text-[16px] text-[#1a73ea] py-5 px-10">
             Special Offer
-            <h1 className="text-center font-bold text-[#000000] text-[28px] md:text-[48px] leading-[30px] md:leading-[48px] pb-10 pt-2">
+            <h1 className="text-center font-bold font-Montserrat text-[#000000] text-[28px] md:text-[48px] leading-[30px] md:leading-[48px] pb-10 pt-2">
               Get a bonus for your first 5 <br /> completed task
             </h1>
             <Link to="/SignUp">

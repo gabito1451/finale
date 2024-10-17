@@ -16,8 +16,8 @@ const AccordionItem = ({ question, answer }) => {
           isOpen ? "bg-white text-black" : "bg-white text-[#1565c0]"
         }`}
       >
-        <h3>{question}</h3>
-        <span>{isOpen ? "−" : "+"}</span>
+        <h3 className="font-sans font-bold text-[18px]">{question}</h3>
+        <span className="text-[18px]">{isOpen ? "−" : "+"}</span>
       </div>
 
       {/* Content of the accordion */}

@@ -84,10 +84,10 @@ const SignInForm = () => {
     <>
       <div className="flex min-h-full flex-1 flex-col justify-center px-6 pb-12 lg:px-8">
         <div className="sm:mx-auto sm:w-full sm:max-w-sm">
-          <h2 className="mt-5 text-center text-[25px] md:text-[32px] text-[#1565c0] font-bold leading-9 tracking-tight">
+          <h2 className="mt-10 text-center font-Inter text-[25px] md:text-[32px] text-[#1565c0] font-bold leading-9 tracking-tight">
             Sign in to your Account
           </h2>
-          <h2 className="mt-5 text-center font-normal text-[12px] leading-2 tracking-tight text-[#000000]">
+          <h2 className="mt-5 text-center font-Inter font-normal text-[12px] leading-2 tracking-tight text-[#000000]">
             Access your account to manage bookings, Connect with <br />{" "}
             professionals and track your services.
           </h2>
@@ -98,7 +98,7 @@ const SignInForm = () => {
             <div>
               <label
                 htmlFor="email"
-                className="block text-sm font-medium leading-6 text-gray-900"
+                className="block text-sm font-semibold font-Inter leading-6 text-gray-900"
               >
                 Email address
               </label>
@@ -125,7 +125,7 @@ const SignInForm = () => {
               <div className="flex items-center justify-between">
                 <label
                   htmlFor="password"
-                  className="block text-sm font-medium leading-6 text-gray-900"
+                  className="block text-sm  font-semibold font-Inter leading-6 text-gray-900"
                 >
                   Password
                 </label>
