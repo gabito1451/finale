@@ -58,8 +58,6 @@ export default function Otp() {
         <button
           type="submit"
           onClick={() => {
-            console.log(otp);
-            console.log(user.otp);
             if (otp == user.otp) {
               toast.success("OTP authenticated successfully!", {
                 position: "top-right",

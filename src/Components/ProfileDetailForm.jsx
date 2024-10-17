@@ -33,7 +33,7 @@ const ProfileDetailForm = () => {
 
   const onSubmit = (data) => {
     let currentUser = JSON.parse(sessionStorage.getItem("currentUser"));
-    console.log(currentUser);
+
     let db = JSON.parse(localStorage.getItem("gabDB"));
 
     let stagingData;

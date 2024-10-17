@@ -10,8 +10,7 @@ export const NameProvider = ({ children }) => {
     const storedDb = sessionStorage.getItem("currentUser");
     if (storedDb) {
       const db = JSON.parse(storedDb);
-      console.log(db);
-      console.log(db.email);
+
       setName(db.email || "Guest");
     }
   }, []);

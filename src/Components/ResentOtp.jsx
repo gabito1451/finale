@@ -13,10 +13,7 @@ export default function ResentOtp() {
     try {
       let troubledUser = JSON.parse(sessionStorage.getItem("troubledUser"));
       setUser(troubledUser);
-      console.log(troubledUser);
-    } catch (error) {
-      console.log(error);
-    }
+    } catch (error) {}
   }, []);
 
   return (
