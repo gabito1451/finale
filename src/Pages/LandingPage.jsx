@@ -109,7 +109,7 @@ const LandingPage = () => {
           </div>
           {/* second section in the 3rd div */}
           <div className="flex flex-col w-full m-auto md:m-0 md:flex-row gap-7  ">
-            <div className="mt-[70px] px-[10px] md:px[0px]">
+            <div className="md:mt-[70px] px-[10px] md:px[0px]">
               <div
                 data-aos="fade-down-right"
                 className="flex  justify-center items-center gap-10 md:gap-10 mb-6 md:mb-0"

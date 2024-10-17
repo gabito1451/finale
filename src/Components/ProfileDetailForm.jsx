@@ -3,6 +3,7 @@ import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import { Link, useNavigate } from "react-router-dom";
+import Breadcrumbs from "./BreadCrumbs";
 
 // Create validation schema using Yup
 const schema = yup.object().shape({
@@ -56,6 +57,7 @@ const ProfileDetailForm = () => {
     <>
       <div className="flex min-h-full flex-1 flex-col justify-center px-6 pb-12 lg:px-8">
         <div className="sm:mx-auto sm:w-full sm:max-w-sm">
+          <Breadcrumbs />
           <h2 className="mt-5 text-center text-[32px] text-[#1565c0] font-bold leading-9 tracking-tight">
             Profile Details
           </h2>

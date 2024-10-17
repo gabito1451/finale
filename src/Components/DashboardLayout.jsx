@@ -55,7 +55,7 @@ const DashboardLayout = ({}) => {
               onClick={closeMenu}
               className={`${
                 String(location.pathname).replaceAll("/", "").toLowerCase() ==
-                "dashboard"
+                "firstdashboard"
                   ? "active-item"
                   : ""
               } w-full md:p-4 md:justify-center md:items-center lg:justify-start box-border flex px-5 gap-2 items-center py-2 font-light`}

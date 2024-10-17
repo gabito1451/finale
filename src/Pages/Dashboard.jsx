@@ -31,13 +31,13 @@ const Dashboard = () => {
       </h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 pb-2">
         <Card
-          number={"0"}
+          number={"95"}
           title={"Total Order"}
           className="bg-[#e3f2fd] hover:rounded-lg hover:scale-105 hover:shadow-lg transition-all duration-300 ease-in-out  "
           url={ord}
         />
         <Card
-          number={"0%"}
+          number={"50%"}
           title={"Total Income"}
           className="bg-[#FFCDD2] hover:rounded-lg hover:scale-105 hover:shadow-lg transition-all duration-300 ease-in-out "
           url={income}

@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import OtpInput from "react-otp-input";
 import { toast } from "react-toastify";
 import { useNavigate } from "react-router-dom";
+import Breadcrumbs from "./BreadCrumbs";
 
 export default function Otp() {
   const navigate = useNavigate();
@@ -26,6 +27,7 @@ export default function Otp() {
 
   return (
     <div className="m-auto flex px-10 flex-col justify-center ">
+      <Breadcrumbs />
       <h2 className="mt-5 text-center text-[25px] md:text-[32px] text-[#1565c0] font-bold leading-9 tracking-tight">
         Email Verification
       </h2>
