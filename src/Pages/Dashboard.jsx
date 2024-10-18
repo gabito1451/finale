@@ -26,8 +26,8 @@ const Dashboard = () => {
   }, []);
   return (
     <div className="px-8 h-[100vh] w-full overflow-y-auto">
-      <h1 className="text-[16px] py-4">
-        Hello <span className="font-semibold text-[18px]">{name}</span>
+      <h1 className="text-[16px]  font-Roboto  py-4">
+        Hello <span className="font-semiboldtext-[18px]">{name}</span>
       </h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 pb-2">
         <Card
@@ -57,7 +57,7 @@ const Dashboard = () => {
       </div>
       {/* chart section */}
 
-      <div className="flex flex-col lg:flex-row  justify-center gap-5 ">
+      <div className="flex flex-col lg:flex-row font-sans justify-center gap-5 ">
         <div className="flex rounded-md  items-center flex-col  bg-[#ffffff] w-full flex-1">
           <h1 className="font-semibold  text-[16px] py-3 w-full bg-[#f3f3f3]">
             Order Statistics{" "}

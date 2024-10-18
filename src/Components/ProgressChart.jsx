@@ -14,6 +14,7 @@ const ProgressChart = ({ percentage, color, title }) => {
       style={{
         position: "relative",
         display: "inline-block",
+        fontFamily: "sans",
         paddingBottom: "10px",
       }}
     >

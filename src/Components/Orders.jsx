@@ -20,7 +20,7 @@ const Orders = ({ className }) => {
         <div className="mb-2 md:w-full">
           {/* Tabs */}
           <div className="w-full overflow-x-auto px-2 hide-scrollbar ">
-            <div className="flex flex-wrap px-2 justify-center rounded-md w-full py-1 bg-[#edebea] shadow-md">
+            <div className="flex flex-wrap px-2 font-sans justify-center rounded-md w-full py-1 bg-[#edebea] shadow-md">
               {["All", "Ongoing", "Pending", "Completed", "Canceled"].map(
                 (tab) => (
                   <button

@@ -61,7 +61,7 @@ const DashboardLayout = ({}) => {
               } w-full md:p-4 md:justify-center md:items-center lg:justify-start box-border flex px-5 gap-2 items-center py-2 font-light`}
             >
               <img src={homeIcon} className="w-4 h-4" alt="home" />
-              <span className="top-[1px] relative md:hidden lg:inline">
+              <span className="top-[1px] relative font-sans md:hidden lg:inline">
                 Home
               </span>
             </Link>
@@ -76,7 +76,7 @@ const DashboardLayout = ({}) => {
               } w-full md:p-4 md:justify-center md:items-center lg:justify-start box-border flex px-5 gap-2 items-center py-2 font-light`}
             >
               <img src={orderIcon} className="w-4 h-4" alt="order" />
-              <span className="top-[1px] relative md:hidden lg:inline">
+              <span className="top-[1px] relative font-sans md:hidden lg:inline">
                 Order
               </span>
             </Link>
@@ -96,7 +96,7 @@ const DashboardLayout = ({}) => {
                 alt="appointments"
               />
 
-              <span className="top-[1px] relative md:hidden lg:inline">
+              <span className="top-[1px] relative font-sans md:hidden lg:inline">
                 My Appointments
               </span>
             </Link>
@@ -112,7 +112,7 @@ const DashboardLayout = ({}) => {
               } w-full md:p-4 md:justify-center md:items-center lg:justify-start box-border flex px-5 gap-2 items-center py-2 font-light`}
             >
               <img src={msgPageIcon} className="w-4 h-4" alt="message" />
-              <span className="top-[1px] relative md:hidden lg:inline">
+              <span className="top-[1px] relative font-sans md:hidden lg:inline">
                 Message
               </span>
             </Link>
@@ -127,7 +127,7 @@ const DashboardLayout = ({}) => {
             >
               {/* <img src={msgPageIcon} className="w-4 h-4" alt="payment" /> */}
               <MdPayment size={18} />
-              <span className="top-[1px] relative md:hidden lg:inline">
+              <span className="top-[1px] relative font-sans md:hidden lg:inline">
                 Payment
               </span>
             </Link>
@@ -144,7 +144,7 @@ const DashboardLayout = ({}) => {
               } w-full md:p-4 md:justify-center md:items-center lg:justify-start box-border flex px-5 gap-2 items-center py-2 font-light`}
             >
               <img src={accountIcon} className="w-4 h-4" alt="account" />
-              <span className="top-[1px] relative md:hidden lg:inline">
+              <span className="top-[1px] relative font-sans md:hidden lg:inline">
                 Account Setting
               </span>
             </Link>
@@ -157,7 +157,7 @@ const DashboardLayout = ({}) => {
               } w-full md:p-4 md:justify-center md:items-center lg:justify-start box-border flex px-5 gap-2 items-center py-2 font-light`}
             >
               <img src={supportIcon} className="w-4 h-4" alt="support" />
-              <span className="top-[1px] relative md:hidden lg:inline">
+              <span className="top-[1px] font-sans relative md:hidden lg:inline">
                 Support
               </span>
             </Link>
@@ -181,7 +181,7 @@ const DashboardLayout = ({}) => {
                 className="flex items-center justify-center gap-2 hover:bg-none "
               >
                 <img src={logoutIcon} className="w-4 h-4" alt="logout" />
-                <span className="top-[1px] relative md:hidden lg:inline">
+                <span className="top-[1px] relative font-sans md:hidden lg:inline">
                   LogOut
                 </span>
               </Popconfirm>
