@@ -77,13 +77,13 @@ const Message = () => {
       {/* Sidebar for Contacts */}
       <div className=" px-2 rounded ">
         <div className="mb-4 bg-[#FCFDFD] md:w-full">
-          <h1 className="text-[#181818] text-[12px] font-bold w-full border-b mt-2 px-3 py-4">
+          <h1 className="text-[#181818] font-sans text-[12px] font-bold w-full border-b mt-2 px-3 py-4">
             CHAT
           </h1>
           {contacts.map((contact) => (
             <div
               key={contact.id}
-              className={` flex items-center border-b border-[#F4F4F4] px-2 py-2 ${
+              className={` flex items-center font-sans border-b border-[#F4F4F4] px-2 py-2 ${
                 contact.id === 4
                   ? "border-l-8 px-[10px] border-b-[#F4F4F4] border-l-[#0d47a1]  "
                   : ""
@@ -96,19 +96,21 @@ const Message = () => {
               />
               <div className="ml-3 ">
                 <h3
-                  className={`text-[14px] font-semibold ${
+                  className={`text-[14px] font-sans font-semibold ${
                     contact.isActive ? "bg-[  #0d47a1] text-white" : ""
                   }`}
                 >
                   {contact.name}
                 </h3>
-                <p className="text-[10px] text-gray-500">{contact.message}</p>
+                <p className="text-[10px] font-sans text-gray-500">
+                  {contact.message}
+                </p>
               </div>
             </div>
           ))}
         </div>
         <Mcard className="mb-16 lg:mb-0">
-          <div className="text-[12px] mx-auto ">
+          <div className="text-[12px] font-sans mx-auto ">
             <CenteredButton>Start New Chat</CenteredButton>
           </div>
         </Mcard>
@@ -119,9 +121,10 @@ const Message = () => {
         {/* Chat Header */}
         <div className=" flex justify-between  items-center p-4 border-b border-gray-200">
           <h2 className="font-bold text-[12px]">
-            CHAT WITH <span className="text-[#0275B1]">KYLE FISHER</span>
+            CHAT WITH{" "}
+            <span className="text-[#0275B1] font-sans">KYLE FISHER</span>
             {""}
-            <span className="ml-2 text-[12px] text-[#181818] opacity-40">
+            <span className="ml-2 text-[12px] font-sans text-[#181818] opacity-40">
               LAST ONLINE: 4 HOURS AGO
             </span>
           </h2>
@@ -142,14 +145,14 @@ const Message = () => {
                 stroke-linejoin="round"
               />
             </svg>
-            <span className="text-[#181818] text-[12px]">
+            <span className="text-[#181818] font-sans text-[12px]">
               Shared media (12)
             </span>
           </div>
         </div>
 
         {/* Chat Messages */}
-        <div className="flex-1 p-4 w-full">
+        <div className="flex-1 p-4 font-sans w-full">
           {messages.map((message, index) => (
             <div
               key={index}
@@ -159,7 +162,7 @@ const Message = () => {
             >
               {message.position === "left" ? (
                 <div className="chat chat-start">
-                  <div className="chat-bubble max-w-lg p-2  text-white rounded-[4px] bg-[#1a73e8]">
+                  <div className="chat-bubble max-w-lg p-2 font-sans text-white rounded-[4px] bg-[#1a73e8]">
                     {message.text}
                   </div>
                 </div>
@@ -167,9 +170,9 @@ const Message = () => {
                 <div className="flex justify-between gap-3">
                   <div>
                     <div className="bg-[#E9F0F8] max-w-lg text-[#181818] p-3 rounded-lg ">
-                      <p>{message.text}</p>
+                      <p className="font-sans">{message.text}</p>
                     </div>
-                    <span className="flex justify-end text-xs text-gray-300 mt-1">
+                    <span className="flex font-sans justify-end text-xs text-gray-300 mt-1">
                       {message.date.toLocaleTimeString()}
                     </span>
                   </div>
@@ -188,7 +191,7 @@ const Message = () => {
               value={newMessage}
               onChange={(e) => setNewMessage(e.target.value)}
               placeholder="Write your message..."
-              className="w-[200px] md:flex-1 p-2 text-[18px]"
+              className="w-[200px] font-sans md:flex-1 p-2 text-[18px]"
             />
             <div className="hidden md:flex md:opacity-40">
               <svg
