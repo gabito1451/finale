@@ -3,14 +3,14 @@ import React from "react";
 const Security = () => {
   return (
     <div className="overflow-y-auto md:h-calc-navbar lg:h-calc-navbar hide-scrollbar">
-      <h2 className="pl-4 text-[18px] font-bold text-[#1565c0] my-5">
+      <h2 className="pl-4 text-[18px] font-sans font-bold text-[#1565c0] my-5">
         Security and Privacy
       </h2>
       <div
         className=" flex flex-col justify-right
         max-w-[600px] px-5  md:m-0  m-auto"
       >
-        <p className="text-left">
+        <p className="text-left font-sans font-light">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
           similique ex quae labore obcaecati autem, natus blanditiis iste magni.
           Quia dolores labore facere expedita recusandae id iste ullam fugiat

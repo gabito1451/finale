@@ -70,7 +70,7 @@ const LandingPage = () => {
           </div>
         </div>
         {/* over 1.1 milloin reviews */}
-        <div className=" flex flex-col gap-3 md:flex-row md:justify-between md:items-center md:px-[40px] lg:px-0 py-[20px] bg-[#0d47a1]">
+        <div className=" flex flex-col gap-3 md:flex-row md:justify-between md:items-center md:px-[40px] lg:px-0 py-[20px] px-10 bg-[#0d47a1]">
           <div className="md:px-10">
             <p className="font-bold text-[24px] font-Merriweather text-white">
               Over 1.1 Million Reviews
@@ -79,9 +79,9 @@ const LandingPage = () => {
               In Cleaning, Home Repairs and Planning{" "}
             </p>
           </div>
-          <div className="flex md:pr-10 lg:pr-10">
-            <img src={appleStoreIcon} alt="" />
-            <img src={playStoreIcon} alt="" />
+          <div className="flex pr-5 md:pr-10 lg:pr-10">
+            <img src={appleStoreIcon} alt="" className="w-24 md:w-32" />
+            <img src={playStoreIcon} alt="" className="w-24 md:w-32" />
           </div>
         </div>
         {/* 3rd div */}
@@ -209,12 +209,12 @@ const LandingPage = () => {
           <img src={imgIcon} alt="" className="mt-5 mx-auto" />
         </section>
         <section id="popular-services">
-          <HeaderButton className="mt-[70px] mx-10 text-[18px] font-Roboto font-normal">
+          <HeaderButton className="mt-[70px] mx-10 text-[14px] md:text-[14px] font-Roboto font-normal">
             POPULAR SERVICES
           </HeaderButton>
           <ServicesGrid />
         </section>
-        <HeaderButton className=" px-10 ml-10 text-[16px] md:text-[18px]  font-normal mt-4 whitespace-nowrap">
+        <HeaderButton className=" px-10 ml-10  text-[14px] md:text-[18px]  font-normal mt-4 whitespace-nowrap">
           REAL STORIES, REAL IMPACT
         </HeaderButton>
         <ProfilesGrid />

@@ -40,7 +40,7 @@ const Profession = () => {
         className="w-full max-w-[600px] px-5 md:m-0 m-auto"
         onSubmit={handleSubmit(onSubmit)}
       >
-        <h2 className="text-[18px] font-bold text-[#1565c0] my-5">
+        <h2 className="text-[18px] font-sans font-bold text-[#1565c0] my-5">
           Professional Information
         </h2>
 
@@ -49,7 +49,7 @@ const Profession = () => {
           <div className="sm:col-span-3">
             <label
               htmlFor="profession-title"
-              className="block text-sm font-normal leading-6 text-[#b6b2b0]"
+              className="block text-sm font-sans font-normal leading-6 text-[#b6b2b0]"
             >
               Profession Title
             </label>
@@ -58,11 +58,11 @@ const Profession = () => {
                 id="profession-title"
                 placeholder="Engineer"
                 type="text"
-                className="block w-full rounded-md outline-none pl-3 border border-solid border-[#1565c0] py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 sm:text-sm sm:leading-6"
+                className="block w-full font-sans rounded-md outline-none pl-3 border border-solid border-[#1565c0] py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 sm:text-sm sm:leading-6"
                 {...register("professionTitle")}
               />
               {errors.professionTitle && (
-                <p className="text-red-500 text-sm">
+                <p className="text-red-500 font-sans text-sm">
                   {errors.professionTitle.message}
                 </p>
               )}
@@ -73,7 +73,7 @@ const Profession = () => {
           <div className="sm:col-span-3">
             <label
               htmlFor="years-of-experience"
-              className="block text-sm font-normal leading-6 text-[#b6b2b0]"
+              className="block text-sm font-sans font-normal leading-6 text-[#b6b2b0]"
             >
               Years of Experience
             </label>
@@ -82,11 +82,11 @@ const Profession = () => {
                 id="years-of-experience"
                 placeholder="5"
                 type="text"
-                className="block w-full rounded-md outline-none pl-3 border border-solid border-[#1565c0] py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 sm:text-sm sm:leading-6"
+                className="block w-full rounded-md font-sans outline-none pl-3 border border-solid border-[#1565c0] py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 sm:text-sm sm:leading-6"
                 {...register("yearsOfExperience")}
               />
               {errors.yearsOfExperience && (
-                <p className="text-red-500 text-sm">
+                <p className="text-red-500 text-sm font-sans">
                   {errors.yearsOfExperience.message}
                 </p>
               )}
@@ -97,7 +97,7 @@ const Profession = () => {
           <div className="col-span-full">
             <label
               htmlFor="business-name"
-              className="block text-sm font-normal leading-6 text-[#b6b2b0]"
+              className="block text-sm font-sans font-normal leading-6 text-[#b6b2b0]"
             >
               Business Name (if applicable)
             </label>
@@ -106,7 +106,7 @@ const Profession = () => {
                 id="business-name"
                 placeholder="Your Business"
                 type="text"
-                className="outline-none pl-3 border border-solid border-[#1565c0] block w-full rounded-md py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 sm:text-sm sm:leading-6"
+                className="outline-none pl-3 font-sans border border-solid border-[#1565c0] block w-full rounded-md py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 sm:text-sm sm:leading-6"
                 {...register("businessName")}
               />
             </div>
@@ -116,7 +116,7 @@ const Profession = () => {
           <div className="col-span-full">
             <label
               htmlFor="specialty-and-skill"
-              className="block text-sm font-normal leading-6 text-[#b6b2b0]"
+              className="block text-sm font-sans font-normal leading-6 text-[#b6b2b0]"
             >
               Specialty & Skills
             </label>
@@ -125,11 +125,11 @@ const Profession = () => {
                 id="specialty-and-skill"
                 placeholder="Software Development, Data Analysis"
                 type="text"
-                className="outline-none pl-3 border border-solid border-[#1565c0] block w-full rounded-md py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 sm:text-sm sm:leading-6"
+                className="outline-none pl-3 border font-sans border-solid border-[#1565c0] block w-full rounded-md py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 sm:text-sm sm:leading-6"
                 {...register("specialtyAndSkill")}
               />
               {errors.specialtyAndSkill && (
-                <p className="text-red-500 text-sm">
+                <p className="text-red-500 font-sans text-sm">
                   {errors.specialtyAndSkill.message}
                 </p>
               )}
@@ -140,7 +140,7 @@ const Profession = () => {
           <div className="col-span-full">
             <label
               htmlFor="certification-and-licences"
-              className="block text-sm font-normal leading-6 text-[#b6b2b0]"
+              className="block text-sm font-normal font-sans leading-6 text-[#b6b2b0]"
             >
               Certification & Licences
             </label>
@@ -149,7 +149,7 @@ const Profession = () => {
                 id="certification-and-licences"
                 placeholder="PMP, AWS Certified"
                 type="text"
-                className="outline-none pl-3 border border-solid border-[#1565c0] block w-full rounded-md py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 sm:text-sm sm:leading-6"
+                className="outline-none pl-3 font-sans border border-solid border-[#1565c0] block w-full rounded-md py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 sm:text-sm sm:leading-6"
                 {...register("certificationAndLicenses")}
               />
             </div>
@@ -159,7 +159,7 @@ const Profession = () => {
           <div className="sm:col-span-3">
             <label
               htmlFor="service-area"
-              className="block text-sm font-normal leading-6 text-[#b6b2b0]"
+              className="block text-sm font-sans font-normal leading-6 text-[#b6b2b0]"
             >
               Service Area
             </label>
@@ -168,11 +168,11 @@ const Profession = () => {
                 id="service-area"
                 placeholder="Lagos"
                 type="text"
-                className="outline-none pl-3 border border-solid border-[#1565c0] block w-full rounded-md py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 sm:text-sm sm:leading-6"
+                className="outline-none pl-3 font-sans border border-solid border-[#1565c0] block w-full rounded-md py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 sm:text-sm sm:leading-6"
                 {...register("serviceArea")}
               />
               {errors.serviceArea && (
-                <p className="text-red-500 text-sm">
+                <p className="text-red-500 font-sans text-sm">
                   {errors.serviceArea.message}
                 </p>
               )}
@@ -183,7 +183,7 @@ const Profession = () => {
           <div className="sm:col-span-3">
             <label
               htmlFor="availability"
-              className="block text-sm font-normal leading-6 text-[#b6b2b0]"
+              className="block text-sm font-sans font-normal leading-6 text-[#b6b2b0]"
             >
               Availability
             </label>
@@ -192,11 +192,11 @@ const Profession = () => {
                 id="availability"
                 placeholder="Full-time"
                 type="text"
-                className="outline-none pl-3 border border-solid border-[#1565c0] block w-full rounded-md py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 sm:text-sm sm:leading-6"
+                className="outline-none pl-3 font-sans border border-solid border-[#1565c0] block w-full rounded-md py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 sm:text-sm sm:leading-6"
                 {...register("availability")}
               />
               {errors.availability && (
-                <p className="text-red-500 text-sm">
+                <p className="text-red-500 text-sm font-sans">
                   {errors.availability.message}
                 </p>
               )}
@@ -206,7 +206,7 @@ const Profession = () => {
           {/* Submit Button */}
           <button
             type="submit"
-            className="rounded-md bg-[#1565c0] px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-[#1565c0] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+            className="rounded-md bg-[#1565c0] font-sans px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-[#1565c0] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
           >
             Save
           </button>

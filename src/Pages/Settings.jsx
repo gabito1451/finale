@@ -45,7 +45,7 @@ const Settings = () => {
   return (
     <div className="mt-2 px-6 flex flex-col md:flex-row gap-8 h-screen bg-white">
       {/* Menu Sidebar */}
-      <div className="pt-10  border-r  w-full h-60 md:w-[280px] md:h-screen  overflow-y-auto hide-scrollbar">
+      <div className="pt-10  border-r  w-full h-60 md:w-[350px] md:h-screen  overflow-y-auto hide-scrollbar">
         <ul className="grid grid-cols-3 grid-rows-2 gap-2 md:grid-cols-1 md:flex-col hide-scrollbar">
           {menuItems.map((item) => (
             <li
@@ -65,7 +65,7 @@ const Settings = () => {
               >
                 {item.icon}
               </span>
-              <span className="ml-2">{item.name}</span>
+              <span className="ml-2 font-sans">{item.name}</span>
             </li>
           ))}
         </ul>

@@ -56,7 +56,7 @@ const PersonalInformation = () => {
         className="max-w-[600px] px-5 flex flex-col md:m-0 m-auto"
         onSubmit={handleSubmit(onSubmit)}
       >
-        <h2 className="text-[18px] font-bold text-[#1565c0] mt-5">
+        <h2 className="text-[18px] font-sans font-bold text-[#1565c0] mt-5">
           Personal Information
         </h2>
         <div className="flex justify-center py-10">
@@ -92,134 +92,142 @@ const PersonalInformation = () => {
               type="file"
               accept="image/*"
               onChange={handleImageUpload}
-              className="hidden"
+              className="hidden font-sans"
             />
           </div>
         </div>
 
         <div className="grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
           <div className="sm:col-span-3">
-            <label className="block text-sm font-normal leading-6 text-[#b6b2b0]">
+            <label className="block text-sm font-sans font-normal leading-6 text-[#b6b2b0]">
               First name
             </label>
             <div className="mt-2">
               <input
                 type="text"
                 placeholder="Gabriel"
-                className="block w-full rounded-md outline-none pl-3 border border-solid border-[#1565c0] py-1.5 text-gray-900 shadow-sm"
+                className="block w-full font-sans rounded-md outline-none pl-3 border border-solid border-[#1565c0] py-1.5 text-gray-900 shadow-sm"
                 {...register("firstName")}
               />
               {errors.firstName && (
-                <p className="text-red-500">{errors.firstName.message}</p>
+                <p className="text-red-500 font-sans">
+                  {errors.firstName.message}
+                </p>
               )}
             </div>
           </div>
 
           <div className="sm:col-span-3">
-            <label className="block text-sm font-normal leading-6 text-[#b6b2b0]">
+            <label className="block text-sm font-sans font-normal leading-6 text-[#b6b2b0]">
               Last name
             </label>
             <div className="mt-2">
               <input
                 type="text"
                 placeholder="Obiagazie"
-                className="block w-full rounded-md outline-none pl-3 border border-solid border-[#1565c0] py-1.5 text-gray-900 shadow-sm"
+                className="block w-full rounded-md font-sans outline-none pl-3 border border-solid border-[#1565c0] py-1.5 text-gray-900 shadow-sm"
                 {...register("lastName")}
               />
               {errors.lastName && (
-                <p className="text-red-500">{errors.lastName.message}</p>
+                <p className="text-red-500 font-sans">
+                  {errors.lastName.message}
+                </p>
               )}
             </div>
           </div>
 
           <div className="col-span-full">
-            <label className="block text-sm font-normal leading-6 text-[#b6b2b0]">
+            <label className="block text-sm font-sans font-normal leading-6 text-[#b6b2b0]">
               Email address
             </label>
             <div className="mt-2">
               <input
                 type="email"
                 placeholder="obiagaziegabriel@gmail.com"
-                className="block w-full rounded-md outline-none pl-3 border border-solid border-[#1565c0] py-1.5 text-gray-900 shadow-sm"
+                className="block w-full rounded-md font-sans outline-none pl-3 border border-solid border-[#1565c0] py-1.5 text-gray-900 shadow-sm"
                 {...register("email")}
               />
               {errors.email && (
-                <p className="text-red-500">{errors.email.message}</p>
+                <p className="text-red-500 font-sans">{errors.email.message}</p>
               )}
             </div>
           </div>
 
           <div className="col-span-full">
-            <label className="block text-sm font-normal leading-6 text-[#b6b2b0]">
+            <label className="block text-sm font-sans font-normal leading-6 text-[#b6b2b0]">
               Contact Number
             </label>
             <div className="mt-2">
               <input
                 type="text"
                 placeholder="00794768822"
-                className="block w-full rounded-md outline-none pl-3 border border-solid border-[#1565c0] py-1.5 text-gray-900 shadow-sm"
+                className="block w-full rounded-md font-sans outline-none pl-3 border border-solid border-[#1565c0] py-1.5 text-gray-900 shadow-sm"
                 {...register("contactNumber")}
               />
               {errors.contactNumber && (
-                <p className="text-red-500">{errors.contactNumber.message}</p>
+                <p className="text-red-500 font-sans">
+                  {errors.contactNumber.message}
+                </p>
               )}
             </div>
           </div>
 
           <div className="col-span-full">
-            <label className="block text-sm font-normal leading-6 text-[#b6b2b0]">
+            <label className="block text-sm font-sans font-normal leading-6 text-[#b6b2b0]">
               Street address
             </label>
             <div className="mt-2">
               <input
                 type="text"
                 placeholder="john street"
-                className="block w-full rounded-md outline-none pl-3 border border-solid border-[#1565c0] py-1.5 text-gray-900 shadow-sm"
+                className="block w-full rounded-md font-sans outline-none pl-3 border border-solid border-[#1565c0] py-1.5 text-gray-900 shadow-sm"
                 {...register("streetAddress")}
               />
               {errors.streetAddress && (
-                <p className="text-red-500">{errors.streetAddress.message}</p>
+                <p className="text-red-500 font-sans">
+                  {errors.streetAddress.message}
+                </p>
               )}
             </div>
           </div>
 
           <div className="sm:col-span-3">
-            <label className="block text-sm font-normal leading-6 text-[#b6b2b0]">
+            <label className="block text-sm font-normal font-sans leading-6 text-[#b6b2b0]">
               City
             </label>
             <div className="mt-2">
               <input
                 type="text"
                 placeholder="kaduna"
-                className="block w-full rounded-md outline-none pl-3 border border-solid border-[#1565c0] py-1.5 text-gray-900 shadow-sm"
+                className="block w-full rounded-md font-sans outline-none pl-3 border border-solid border-[#1565c0] py-1.5 text-gray-900 shadow-sm"
                 {...register("city")}
               />
               {errors.city && (
-                <p className="text-red-500">{errors.city.message}</p>
+                <p className="text-red-500 font-sans">{errors.city.message}</p>
               )}
             </div>
           </div>
 
           <div className="sm:col-span-3">
-            <label className="block text-sm font-normal leading-6 text-[#b6b2b0]">
+            <label className="block text-sm font-normal font-sans leading-6 text-[#b6b2b0]">
               State
             </label>
             <div className="mt-2">
               <input
                 type="text"
                 placeholder="kaduna"
-                className="block w-full rounded-md outline-none pl-3 border border-solid border-[#1565c0] py-1.5 text-gray-900 shadow-sm"
+                className="block w-full rounded-md font-sans outline-none pl-3 border border-solid border-[#1565c0] py-1.5 text-gray-900 shadow-sm"
                 {...register("state")}
               />
               {errors.state && (
-                <p className="text-red-500">{errors.state.message}</p>
+                <p className="text-red-500 font-sans">{errors.state.message}</p>
               )}
             </div>
           </div>
 
           <button
             type="submit"
-            className="rounded-md bg-[#1565c0] px-3 py-2 text-sm font-semibold text-white shadow-sm"
+            className="rounded-md bg-[#1565c0] px-3 py-2 text-sm font-sans font-semibold text-white shadow-sm"
           >
             Save
           </button>
