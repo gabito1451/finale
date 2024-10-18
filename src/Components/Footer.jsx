@@ -17,9 +17,7 @@ const Footer = () => {
 
           {/* Social Media Icons */}
           <div className="space-y-2">
-            <p className="font-semibold font-Roboto text-[16px]">
-              Social Media
-            </p>
+            <p className="font-semibold  font-sans text-[16px]">Social Media</p>
             <div className="flex space-x-4">
               {/* Add your social media icons here */}
               <a href="#" className="text-xl">
@@ -37,30 +35,30 @@ const Footer = () => {
 
         {/* Quick Links Section */}
         <div className="space-y-4 text-left font-Roboto">
-          <p className="font-semibold font-Roboto text-[16px]">Quick Links</p>
+          <p className="font-semibold  font-sans text-[16px]">Quick Links</p>
           <ul className="space-y-2">
             <li>
-              <a href="#" className="hover:underline font-Roboto text-[14px]">
+              <a href="#" className="hover:underline  font-sans text-[14px]">
                 How It works
               </a>
             </li>
             <li>
-              <a href="#" className="hover:underline font-Roboto text-[14px]">
+              <a href="#" className="hover:underline  font-sans text-[14px]">
                 Services
               </a>
             </li>
             <li>
-              <a href="#" className="hover:underline font-Roboto text-[14px]">
+              <a href="#" className="hover:underline  font-sans text-[14px]">
                 FAQ
               </a>
             </li>
             <li>
-              <a href="#" className="hover:underline font-Roboto text-[14px]">
+              <a href="#" className="hover:underline  font-sans text-[14px]">
                 Terms of Use
               </a>
             </li>
             <li>
-              <a href="#" className="hover:underline font-Roboto text-[14px]">
+              <a href="#" className="hover:underline  font-sans text-[14px]">
                 Support
               </a>
             </li>
@@ -69,13 +67,11 @@ const Footer = () => {
 
         {/* Support Center Section */}
         <div className="space-y-4 text-center md:text-left">
-          <p className="font-semibold font-Roboto text-[16px]">
-            Support Center
-          </p>
+          <p className="font-semibold  font-sans text-[16px]">Support Center</p>
           <div className="space-y-2">
             {/* Support phone numbers */}
-            <p className="text-[14px] font-Roboto">+123 456 7890</p>
-            <p className=" text-[14px] font-Roboto">+987 654 3210</p>
+            <p className="text-[14px]  font-sans">+123 456 7890</p>
+            <p className=" text-[14px]  font-sans">+987 654 3210</p>
           </div>
         </div>
       </div>

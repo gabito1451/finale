@@ -120,7 +120,7 @@ const LandingPage = () => {
                   <h1 className="text-[24px] font-Merriweather font-semibold whitespace-nowrap">
                     Expand Your Reach
                   </h1>
-                  <p className="text-[16px] font-Roboto text-left md:text-right">
+                  <p className="text-[16px] font-sans text-left md:text-right">
                     Access a{" "}
                     <span className="text-[#1a73ea]">
                       large and growing <br />
@@ -145,7 +145,7 @@ const LandingPage = () => {
                   <h1 className="text-[24px] font-Merriweather  font-semibold whitespace-nowrap">
                     Secure Payments
                   </h1>
-                  <p className="text-[16px]  font-Roboto text-left">
+                  <p className="text-[16px]   font-sans text-left">
                     Our
                     <span className="text-[#1a73ea]">
                       secure payment <br />
@@ -169,7 +169,7 @@ const LandingPage = () => {
                   <h1 className="text-[24px] font-Merriweather  font-semibold whitespace-nowrap">
                     Flexible Schedule
                   </h1>
-                  <p className="text-[16px]  font-Roboto text-left">
+                  <p className="text-[16px]   font-sans text-left">
                     <span className="text-[#1a73ea]">
                       Choose when and where
                     </span>{" "}
@@ -193,7 +193,7 @@ const LandingPage = () => {
                   <h1 className="text-[24px] font-Merriweather  font-semibold whitespace-nowrap">
                     Dedicated Support
                   </h1>
-                  <p className="text-[16px] font-Roboto text-left">
+                  <p className="text-[16px]  font-sans text-left">
                     Our
                     <span className="text-[#1a73ea]">support team</span> is{" "}
                     <br />
@@ -235,7 +235,7 @@ const LandingPage = () => {
         <div className="bg-[#e3f2fd] mt-4">
           <p className="font-semibold font-Roboto text-[16px] text-[#1a73ea] py-5 px-10">
             Special Offer
-            <h1 className="text-center font-bold font-Montserrat text-[#000000] text-[28px] md:text-[48px] leading-[30px] md:leading-[48px] pb-10 pt-2">
+            <h1 className="text-center font-bold  font-sans text-[#000000] text-[28px] md:text-[46px] leading-[38px] md:leading-[48px] pb-11 pt-2">
               Get a bonus for your first 5 <br /> completed task
             </h1>
             <Link to="/SignUp">
